@@ -1,1 +1,4 @@
-# confessionproject
+## confession
+* * *
+- using SFML framework
+- in progress
