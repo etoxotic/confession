@@ -1,0 +1,3 @@
+/home/yana/Documents/uni/процпрога/confessionproject/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/yana/Documents/uni/процпрога/confessionproject/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/yana/Documents/uni/процпрога/confessionproject/cmake-build-debug/CMakeFiles/confessionproject.dir
