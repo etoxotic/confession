@@ -676,11 +676,11 @@ SFML/Config.hpp
 
 ../resources/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
 
-/home/yana/Documents/uni/процпрога/confessionproject/Engine/Tile.cpp
-Tile.h
-/home/yana/Documents/uni/процпрога/confessionproject/Engine/Tile.h
+/home/yana/Documents/uni/процпрога/confession/confession/Engine/KeyHandler.cpp
+KeyHandler.h
+/home/yana/Documents/uni/процпрога/confession/confession/Engine/KeyHandler.h
 
-/home/yana/Documents/uni/процпрога/confessionproject/Engine/Tile.h
+/home/yana/Documents/uni/процпрога/confession/confession/Engine/KeyHandler.h
 SFML/Graphics.hpp
 -
 

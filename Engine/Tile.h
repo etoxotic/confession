@@ -6,23 +6,27 @@
 #define CONFESSIONPROJECT_TILE_H
 #pragma once
 #include <SFML/Graphics.hpp>
+#include <iostream>
 
 using namespace sf;
 
 class Tile {
 private:
-    Vector2f position;
+    Vector2f pos;
     String state;
     Sprite sprite;
     Texture texture;
+    Text letter;
+    Font font;
     char element;
 
 public:
-    Tile();
-    void define(int x, int y, char element);
+    Tile(int x, int y, char element);
     void setState(String state);
     void draw(RenderWindow *window);
+    bool isElement(char key);
     Vector2f getPosition();
+    char getElement();
 };
 
 

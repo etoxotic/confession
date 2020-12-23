@@ -4,13 +4,16 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/yana/Documents/uni/процпрога/confessionproject/Engine/Bullet.cpp" "/home/yana/Documents/uni/процпрога/confessionproject/cmake-build-debug/CMakeFiles/confessionproject.dir/Engine/Bullet.cpp.o"
-  "/home/yana/Documents/uni/процпрога/confessionproject/Engine/Button.cpp" "/home/yana/Documents/uni/процпрога/confessionproject/cmake-build-debug/CMakeFiles/confessionproject.dir/Engine/Button.cpp.o"
-  "/home/yana/Documents/uni/процпрога/confessionproject/Engine/Ego.cpp" "/home/yana/Documents/uni/процпрога/confessionproject/cmake-build-debug/CMakeFiles/confessionproject.dir/Engine/Ego.cpp.o"
-  "/home/yana/Documents/uni/процпрога/confessionproject/Engine/Engine.cpp" "/home/yana/Documents/uni/процпрога/confessionproject/cmake-build-debug/CMakeFiles/confessionproject.dir/Engine/Engine.cpp.o"
-  "/home/yana/Documents/uni/процпрога/confessionproject/Engine/Interface.cpp" "/home/yana/Documents/uni/процпрога/confessionproject/cmake-build-debug/CMakeFiles/confessionproject.dir/Engine/Interface.cpp.o"
-  "/home/yana/Documents/uni/процпрога/confessionproject/Engine/Tile.cpp" "/home/yana/Documents/uni/процпрога/confessionproject/cmake-build-debug/CMakeFiles/confessionproject.dir/Engine/Tile.cpp.o"
-  "/home/yana/Documents/uni/процпрога/confessionproject/main.cpp" "/home/yana/Documents/uni/процпрога/confessionproject/cmake-build-debug/CMakeFiles/confessionproject.dir/main.cpp.o"
+  "/home/yana/Documents/uni/процпрога/confession/confession/Engine/Bullet.cpp" "/home/yana/Documents/uni/процпрога/confession/confession/cmake-build-debug/CMakeFiles/confessionproject.dir/Engine/Bullet.cpp.o"
+  "/home/yana/Documents/uni/процпрога/confession/confession/Engine/Button.cpp" "/home/yana/Documents/uni/процпрога/confession/confession/cmake-build-debug/CMakeFiles/confessionproject.dir/Engine/Button.cpp.o"
+  "/home/yana/Documents/uni/процпрога/confession/confession/Engine/Ego.cpp" "/home/yana/Documents/uni/процпрога/confession/confession/cmake-build-debug/CMakeFiles/confessionproject.dir/Engine/Ego.cpp.o"
+  "/home/yana/Documents/uni/процпрога/confession/confession/Engine/Engine.cpp" "/home/yana/Documents/uni/процпрога/confession/confession/cmake-build-debug/CMakeFiles/confessionproject.dir/Engine/Engine.cpp.o"
+  "/home/yana/Documents/uni/процпрога/confession/confession/Engine/Game.cpp" "/home/yana/Documents/uni/процпрога/confession/confession/cmake-build-debug/CMakeFiles/confessionproject.dir/Engine/Game.cpp.o"
+  "/home/yana/Documents/uni/процпрога/confession/confession/Engine/Generator.cpp" "/home/yana/Documents/uni/процпрога/confession/confession/cmake-build-debug/CMakeFiles/confessionproject.dir/Engine/Generator.cpp.o"
+  "/home/yana/Documents/uni/процпрога/confession/confession/Engine/Interface.cpp" "/home/yana/Documents/uni/процпрога/confession/confession/cmake-build-debug/CMakeFiles/confessionproject.dir/Engine/Interface.cpp.o"
+  "/home/yana/Documents/uni/процпрога/confession/confession/Engine/KeyHandler.cpp" "/home/yana/Documents/uni/процпрога/confession/confession/cmake-build-debug/CMakeFiles/confessionproject.dir/Engine/KeyHandler.cpp.o"
+  "/home/yana/Documents/uni/процпрога/confession/confession/Engine/Tile.cpp" "/home/yana/Documents/uni/процпрога/confession/confession/cmake-build-debug/CMakeFiles/confessionproject.dir/Engine/Tile.cpp.o"
+  "/home/yana/Documents/uni/процпрога/confession/confession/main.cpp" "/home/yana/Documents/uni/процпрога/confession/confession/cmake-build-debug/CMakeFiles/confessionproject.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

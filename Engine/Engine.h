@@ -10,9 +10,12 @@
 #include "Bullet.h"
 #include "Ego.h"
 #include "Interface.h"
+#include "Generator.h"
+#include "Game.h"
+#include "KeyHandler.h"
 #include <SFML/Graphics.hpp>
 #include <list>
-#include <iostream>
+
 
 
 using namespace sf;
@@ -21,17 +24,18 @@ class Engine
 {
 private:
     RenderWindow renderWindow;
-    std::list<Tile> tiles;
     Event event;
     Clock clock;
     Time deltaTime;
-    Interface interface;
+    Interface *interface;
+    Generator *generator;
+    Game *game;
+    String windowState;
     void inputHandler();
     void update(float deltaTime);
     void draw();
     void eventHandler();
-    void setTile(int x, int y, char element);
-
+    void startGame();
 
 public:
     Engine();

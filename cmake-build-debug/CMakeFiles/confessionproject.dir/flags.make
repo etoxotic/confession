@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/yana/Documents/uni/процпрога/confessionproject/SFML_INCLUDE_DIR -isystem /home/yana/Documents/uni/процпрога/confessionproject/resources/SFML-2.5.1/include 
+CXX_INCLUDES = -I/home/yana/Documents/uni/процпрога/confession/confession/SFML_INCLUDE_DIR -isystem /home/yana/Documents/uni/процпрога/confession/confession/resources/SFML-2.5.1/include 
 

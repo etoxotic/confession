@@ -68,10 +68,10 @@ RM = /home/yana/Documents/uni/процпрога/clion/clion-2020.2.1/bin/cmake/
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yana/Documents/uni/процпрога/confessionproject
+CMAKE_SOURCE_DIR = /home/yana/Documents/uni/процпрога/confession/confession
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yana/Documents/uni/процпрога/confessionproject/cmake-build-debug
+CMAKE_BINARY_DIR = /home/yana/Documents/uni/процпрога/confession/confession/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yana/Documents/uni/процпрога/confessionproject/cmake-build-debug/CMakeFiles /home/yana/Documents/uni/процпрога/confessionproject/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yana/Documents/uni/процпрога/confession/confession/cmake-build-debug/CMakeFiles /home/yana/Documents/uni/процпрога/confession/confession/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yana/Documents/uni/процпрога/confessionproject/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yana/Documents/uni/процпрога/confession/confession/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -251,6 +251,60 @@ Engine/Engine.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/Engine/Engine.cpp.s
 .PHONY : Engine/Engine.cpp.s
 
+Engine/Game.o: Engine/Game.cpp.o
+
+.PHONY : Engine/Game.o
+
+# target to build an object file
+Engine/Game.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/Engine/Game.cpp.o
+.PHONY : Engine/Game.cpp.o
+
+Engine/Game.i: Engine/Game.cpp.i
+
+.PHONY : Engine/Game.i
+
+# target to preprocess a source file
+Engine/Game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/Engine/Game.cpp.i
+.PHONY : Engine/Game.cpp.i
+
+Engine/Game.s: Engine/Game.cpp.s
+
+.PHONY : Engine/Game.s
+
+# target to generate assembly for a file
+Engine/Game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/Engine/Game.cpp.s
+.PHONY : Engine/Game.cpp.s
+
+Engine/Generator.o: Engine/Generator.cpp.o
+
+.PHONY : Engine/Generator.o
+
+# target to build an object file
+Engine/Generator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/Engine/Generator.cpp.o
+.PHONY : Engine/Generator.cpp.o
+
+Engine/Generator.i: Engine/Generator.cpp.i
+
+.PHONY : Engine/Generator.i
+
+# target to preprocess a source file
+Engine/Generator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/Engine/Generator.cpp.i
+.PHONY : Engine/Generator.cpp.i
+
+Engine/Generator.s: Engine/Generator.cpp.s
+
+.PHONY : Engine/Generator.s
+
+# target to generate assembly for a file
+Engine/Generator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/Engine/Generator.cpp.s
+.PHONY : Engine/Generator.cpp.s
+
 Engine/Interface.o: Engine/Interface.cpp.o
 
 .PHONY : Engine/Interface.o
@@ -277,6 +331,33 @@ Engine/Interface.s: Engine/Interface.cpp.s
 Engine/Interface.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/Engine/Interface.cpp.s
 .PHONY : Engine/Interface.cpp.s
+
+Engine/KeyHandler.o: Engine/KeyHandler.cpp.o
+
+.PHONY : Engine/KeyHandler.o
+
+# target to build an object file
+Engine/KeyHandler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/Engine/KeyHandler.cpp.o
+.PHONY : Engine/KeyHandler.cpp.o
+
+Engine/KeyHandler.i: Engine/KeyHandler.cpp.i
+
+.PHONY : Engine/KeyHandler.i
+
+# target to preprocess a source file
+Engine/KeyHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/Engine/KeyHandler.cpp.i
+.PHONY : Engine/KeyHandler.cpp.i
+
+Engine/KeyHandler.s: Engine/KeyHandler.cpp.s
+
+.PHONY : Engine/KeyHandler.s
+
+# target to generate assembly for a file
+Engine/KeyHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/Engine/KeyHandler.cpp.s
+.PHONY : Engine/KeyHandler.cpp.s
 
 Engine/Tile.o: Engine/Tile.cpp.o
 
@@ -353,9 +434,18 @@ help:
 	@echo "... Engine/Engine.o"
 	@echo "... Engine/Engine.i"
 	@echo "... Engine/Engine.s"
+	@echo "... Engine/Game.o"
+	@echo "... Engine/Game.i"
+	@echo "... Engine/Game.s"
+	@echo "... Engine/Generator.o"
+	@echo "... Engine/Generator.i"
+	@echo "... Engine/Generator.s"
 	@echo "... Engine/Interface.o"
 	@echo "... Engine/Interface.i"
 	@echo "... Engine/Interface.s"
+	@echo "... Engine/KeyHandler.o"
+	@echo "... Engine/KeyHandler.i"
+	@echo "... Engine/KeyHandler.s"
 	@echo "... Engine/Tile.o"
 	@echo "... Engine/Tile.i"
 	@echo "... Engine/Tile.s"

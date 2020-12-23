@@ -16,19 +16,16 @@ Engine::Engine()
     resolution.y = 600;
     renderWindow.create(VideoMode(resolution.x, resolution.y),
                     "Confession");
-}
-
-void Engine::setTile(int x, int y, char element){
-    Tile temptile;
-    tiles.push_back(temptile);
-    tiles.back().define(x,y,element);
+    windowState = "startPage";
 }
 
 
 void Engine::start()
 {
     Clock clock;
-    interface.setState("startPage");
+    interface = new Interface();
+
+    interface->setState(windowState);
 
     while (renderWindow.isOpen())
     {
@@ -42,17 +39,30 @@ void Engine::start()
     }
 }
 
+void Engine::startGame(){
+    game = new Game();
+    generator = new Generator(0,game->getTiles(),"zero");
+}
 
 void Engine::inputHandler()
 {
     if (event.type == sf::Event::Closed)
         renderWindow.close();
     if (sf::Mouse::isButtonPressed(sf::Mouse::Left)){
-        String link = interface.clickHandler();
-        if(link == "startGame")
-            interface.setState("gamePage");
-        if(link == "infoPage")
-            interface.setState("infoPage");
+        String link = interface->clickHandler();
+        if(link == "startGame"){
+            windowState = "gamePage";
+            interface->setState(windowState);
+            startGame();
+        }
+        if(link == "infoPage"){
+            windowState = "infoPage";
+            interface->setState(windowState);
+        }
+    }
+    if (event.type == sf::Event::KeyPressed && windowState == "gamePage"){
+        char key = keyHandler(event.key.code);
+        game->tilePress(key);
     }
 
 }
@@ -60,18 +70,17 @@ void Engine::inputHandler()
 void Engine::update(float deltaTime)
 {
     Vector2i mousePos = Mouse::getPosition(renderWindow);
-    interface.update(deltaTime, mousePos);
+    interface->update(deltaTime, mousePos);
 }
 
 void Engine::draw()
 {
     renderWindow.clear(Color::White);
 
-    interface.draw(&renderWindow);
+    interface->draw(&renderWindow);
 
-    for (Tile tile : tiles) {
-        tile.draw(&renderWindow);
-    }
+    if(windowState == "gamePage")
+        game->draw(&renderWindow);
 
     renderWindow.display();
 }
