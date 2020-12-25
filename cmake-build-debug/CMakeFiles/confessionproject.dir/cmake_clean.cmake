@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/confessionproject.dir/Engine/Generator.cpp.o"
   "CMakeFiles/confessionproject.dir/Engine/Interface.cpp.o"
   "CMakeFiles/confessionproject.dir/Engine/KeyHandler.cpp.o"
+  "CMakeFiles/confessionproject.dir/Engine/Message.cpp.o"
   "CMakeFiles/confessionproject.dir/Engine/Tile.cpp.o"
   "CMakeFiles/confessionproject.dir/main.cpp.o"
   "confessionproject"

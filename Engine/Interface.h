@@ -28,7 +28,7 @@ public:
     void setState(String state);
     void message(int x, int y, String text);
     void draw(RenderWindow *window);
-    void update(float deltaTime, Vector2i mousePos);
+    void update(Vector2i mousePos);
     String clickHandler();
 };
 

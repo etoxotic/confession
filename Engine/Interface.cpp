@@ -22,21 +22,26 @@ void Interface::setState(String state){
         setText(334,150,"text",L"ИСПОВЕДЬ");
         setText(0,560,"tinytext","dev ver.");
         setText(710,560,"tinytext","@etoxotic");
-        setButton(250,250,"normal","PLAY","startGame");
+        setButton(250,250,"normal","PLAY","gamePage");
         setButton(380, 380, "borderless", "INFO", "infoPage");
     }
     if(state == "gamePage"){
-        //
+        setButton(10, 0, "borderless", " <- ", "startPage");
+        setButton(750, 0, "borderless", " || ", "gamePaused");
+    }
+    if(state == "gamePaused"){
+        setButton(10, 0, "borderless", " <- ", "startPage");
+        setButton(750, 0, "borderless", " |> ", "gamePage");
     }
     if(state == "infoPage"){
-        //
+        setButton(10, 0, "borderless", " <- ", "startPage");
     }
 }
 
-void Interface::update(float deltaTime, Vector2i mousePos)
+void Interface::update(Vector2i mousePos)
 {
     for (Button *b : buttons) {
-        b->update(deltaTime, mousePos);
+        b->update(mousePos);
     }
 }
 

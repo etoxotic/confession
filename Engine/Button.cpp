@@ -26,7 +26,7 @@ Button::Button(Vector2f position, String btype, String text, String blink){
     content.setString(text);
 }
 
-void Button::update(float deltaTime, Vector2i mousePos)
+void Button::update(Vector2i mousePos)
 {
     if(mousePos.x > pos.x && mousePos.x < pos.x+size.x && mousePos.y > pos.y && mousePos.y < pos.y+size.y){
         state = "captured";

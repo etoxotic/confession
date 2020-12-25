@@ -134,6 +134,12 @@
 		<Unit filename="/home/yana/Documents/uni/процпрога/confession/confession/Engine/KeyHandler.h">
 			<Option target="confessionproject"/>
 		</Unit>
+		<Unit filename="/home/yana/Documents/uni/процпрога/confession/confession/Engine/Message.cpp">
+			<Option target="confessionproject"/>
+		</Unit>
+		<Unit filename="/home/yana/Documents/uni/процпрога/confession/confession/Engine/Message.h">
+			<Option target="confessionproject"/>
+		</Unit>
 		<Unit filename="/home/yana/Documents/uni/процпрога/confession/confession/Engine/Tile.cpp">
 			<Option target="confessionproject"/>
 		</Unit>

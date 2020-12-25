@@ -6,32 +6,124 @@
 
 Game::Game(){
     firstPress = false;
+    endGame = false;
+    pause = true;
+    gameOn=false;
+    nTact=0;
+    kDelay=3;
 }
+
+void Game::start(){
+    startTacts();
+}
+
+void Game::startTacts(){
+    nTact=1;
+    gameOn = true;
+    pause = false;
+    currTact = tacts.begin();
+    oneTact = seconds(240/float(bmp));
+    deltaTime.restart();
+    currTime = seconds(0);
+    updateField();
+};
 
 
 void Game::tilePress(char key) {
-    if(firstPress)
-        pressedTile->setState("default");
-    else
-        firstPress = true;
-    for (Tile *tile : tiles) {
-        if(tile->getElement() == key){
-            tile->setState("pressed");
-            pressedTile = tile;
+    if(!pause){
+        if(firstPress)
+            pressedTile->setState(pressedTile->getPrevState());
+        else
+            firstPress = true;
+        for (Tile *tile : tiles) {
+            if(tile->getElement() == key){
+                tile->setState("pressed");
+                pressedTile = tile;
+            }
         }
     }
 }
 
 void Game::update() {
+    if(!pause){
+        currTime += deltaTime.getElapsedTime();
+        for (Bullet *bullet : bullets) {
+            bullet->update();
+            if(bullet->isCollided()){
+                bullet->getTile()->setState("damaged");
+            }
+        }
+        Bullet *deleteBullet;
+        bool deleteFlag = false;
+        for(Bullet *bullet : bullets){
+            if(bullet->getCollided()){
+                bullet->getTile()->setState(bullet->getTile()->getPrevState());
+                deleteBullet = bullet;
+                deleteFlag = true;
+            }
+        }
+        if (deleteFlag)
+            bullets.remove(deleteBullet);
 
+        if (currTime > oneTact){
+            deltaTime.restart();
+            currTact++;
+            nTact++;
+            currTime = seconds(0);
+            if(currTact == tacts.end())
+                endGame = true;
+            updateField();
+        }
+
+    }
+}
+
+void Game::updateField() {
+    for (Tile *tile : tiles) {
+        if(tile->getElement() == *currTact){
+            tile->setState("dangered");
+            setBullet(tile);
+        }
+    }
+}
+
+void Game::setBullet(Tile *tile) {
+    tile->setState("dangered");
+    Bullet *tempbullet = new Bullet(tile, seconds(kDelay*oneTact.asSeconds()));
+    bullets.push_back(tempbullet);
 }
 
 void Game::draw(RenderWindow *window) {
+    for (Bullet *bullet : bullets) {
+        bullet->draw(window);
+    }
     for (Tile *tile : tiles) {
         tile->draw(window);
     }
 }
 
-std::list<Tile*>  *Game::getTiles(){
+void Game::setPause(bool flag) {
+    pause = flag;
+    for(Bullet *bullet : bullets)
+        bullet->setPause(flag);
+
+    if(!flag)
+        deltaTime.restart();
+}
+
+list<Tile*>  *Game::getTiles(){
     return &tiles;
 };
+
+list<char> *Game::getTacts() {
+    return &tacts;
+}
+int *Game::getBmp() {
+    return &bmp;
+}
+bool Game::isEnded() {
+    return endGame;
+}
+bool Game::isOn(){
+    return gameOn;
+}

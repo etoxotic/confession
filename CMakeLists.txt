@@ -18,5 +18,5 @@ if(SFML_FOUND)
     message(STATUS "SFML_VERSION: ${SFML_VERSION}")
 endif()
 
-add_executable(confessionproject main.cpp Engine/Engine.cpp Engine/Engine.h Engine/Tile.cpp Engine/Tile.h Engine/Bullet.cpp Engine/Bullet.h Engine/Ego.cpp Engine/Ego.h Engine/Interface.cpp Engine/Interface.h Engine/Button.cpp Engine/Button.h Engine/Generator.cpp Engine/Generator.h Engine/Game.cpp Engine/Game.h Engine/KeyHandler.cpp Engine/KeyHandler.h)
-target_link_libraries (confessionproject sfml-graphics sfml-window sfml-system)
+add_executable(confessionproject main.cpp Engine/Engine.cpp Engine/Engine.h Engine/Tile.cpp Engine/Tile.h Engine/Bullet.cpp Engine/Bullet.h Engine/Ego.cpp Engine/Ego.h Engine/Interface.cpp Engine/Interface.h Engine/Button.cpp Engine/Button.h Engine/Generator.cpp Engine/Generator.h Engine/Game.cpp Engine/Game.h Engine/KeyHandler.cpp Engine/KeyHandler.h Engine/Message.cpp Engine/Message.h)
+target_link_libraries (confessionproject sfml-graphics sfml-window sfml-system sfml-audio)

@@ -20,19 +20,17 @@ using namespace std;
 class Generator {
 private:
     list <list<char>*> lines;
-    int bmp;
+    int *bmp;
     list<Tile*> *tiles;
     int levelId;
-    list<char> tacts;
-    list<char>::iterator currentTact;
+    list<char> *tacts;
     string schemeConf;
     void setTile(int x, int y, char element);
     void setTilesScheme();
     void generateTacts();
     void readLevel();
 public:
-    Generator(int levelId, list<Tile*> *tiles, string schemeConf);
-
+    Generator(int levelId, list<Tile*> *tiles, list<char> *tacts, int*bmp);
 
 };
 

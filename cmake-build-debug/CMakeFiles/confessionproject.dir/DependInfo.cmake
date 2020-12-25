@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/yana/Documents/uni/процпрога/confession/confession/Engine/Generator.cpp" "/home/yana/Documents/uni/процпрога/confession/confession/cmake-build-debug/CMakeFiles/confessionproject.dir/Engine/Generator.cpp.o"
   "/home/yana/Documents/uni/процпрога/confession/confession/Engine/Interface.cpp" "/home/yana/Documents/uni/процпрога/confession/confession/cmake-build-debug/CMakeFiles/confessionproject.dir/Engine/Interface.cpp.o"
   "/home/yana/Documents/uni/процпрога/confession/confession/Engine/KeyHandler.cpp" "/home/yana/Documents/uni/процпрога/confession/confession/cmake-build-debug/CMakeFiles/confessionproject.dir/Engine/KeyHandler.cpp.o"
+  "/home/yana/Documents/uni/процпрога/confession/confession/Engine/Message.cpp" "/home/yana/Documents/uni/процпрога/confession/confession/cmake-build-debug/CMakeFiles/confessionproject.dir/Engine/Message.cpp.o"
   "/home/yana/Documents/uni/процпрога/confession/confession/Engine/Tile.cpp" "/home/yana/Documents/uni/процпрога/confession/confession/cmake-build-debug/CMakeFiles/confessionproject.dir/Engine/Tile.cpp.o"
   "/home/yana/Documents/uni/процпрога/confession/confession/main.cpp" "/home/yana/Documents/uni/процпрога/confession/confession/cmake-build-debug/CMakeFiles/confessionproject.dir/main.cpp.o"
   )

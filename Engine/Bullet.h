@@ -11,29 +11,36 @@
 #include <SFML/Graphics.hpp>
 #include "Tile.h"
 #include <cmath>
+#include <iostream>
+
+using namespace std;
 
 
 class Bullet {
 private:
     Tile *tile;
     Vector2f position;
+    Vector2f center;
     Sprite sprite;
     Texture texture;
     CircleShape circle;
-    int radius;
-    int maxRadius;
+    Clock clock;
+    Time deltaTime;
+    float radius;
+    float maxRadius;
     float radiusSpeed;
     float xspeed;
     float yspeed;
     bool collided;
+    bool pause;
 public:
-    Bullet();
-    void define(int x, int y, Tile *tile, float speed);
-    void update(float deltaTime);
+    Bullet(Tile *tile, Time tact);
+    void update();
     void draw(RenderWindow *window);
     bool isCollided();
     bool getCollided();
-    CircleShape getCircle();
+    Tile* getTile();
+    void setPause(bool _pause);
 };
 
 

@@ -15,6 +15,8 @@
 #include "KeyHandler.h"
 #include <SFML/Graphics.hpp>
 #include <list>
+#include <fstream>
+#include <SFML/Audio.hpp>
 
 
 
@@ -25,17 +27,18 @@ class Engine
 private:
     RenderWindow renderWindow;
     Event event;
-    Clock clock;
-    Time deltaTime;
     Interface *interface;
     Generator *generator;
     Game *game;
     String windowState;
+    Time updatePeriod;
+    Clock clock;
     void inputHandler();
-    void update(float deltaTime);
+    void update();
     void draw();
     void eventHandler();
     void startGame();
+    void playIntro();
 
 public:
     Engine();

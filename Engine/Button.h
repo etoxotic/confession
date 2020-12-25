@@ -25,7 +25,7 @@ private:
 public:
     Button(Vector2f pos, String type, String t, String link);
     void draw(RenderWindow *window);
-    void update(float deltaTime, Vector2i mousePos);
+    void update(Vector2i mousePos);
     String clickHandler();
 };
 

@@ -359,6 +359,33 @@ Engine/KeyHandler.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/Engine/KeyHandler.cpp.s
 .PHONY : Engine/KeyHandler.cpp.s
 
+Engine/Message.o: Engine/Message.cpp.o
+
+.PHONY : Engine/Message.o
+
+# target to build an object file
+Engine/Message.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/Engine/Message.cpp.o
+.PHONY : Engine/Message.cpp.o
+
+Engine/Message.i: Engine/Message.cpp.i
+
+.PHONY : Engine/Message.i
+
+# target to preprocess a source file
+Engine/Message.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/Engine/Message.cpp.i
+.PHONY : Engine/Message.cpp.i
+
+Engine/Message.s: Engine/Message.cpp.s
+
+.PHONY : Engine/Message.s
+
+# target to generate assembly for a file
+Engine/Message.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/Engine/Message.cpp.s
+.PHONY : Engine/Message.cpp.s
+
 Engine/Tile.o: Engine/Tile.cpp.o
 
 .PHONY : Engine/Tile.o
@@ -446,6 +473,9 @@ help:
 	@echo "... Engine/KeyHandler.o"
 	@echo "... Engine/KeyHandler.i"
 	@echo "... Engine/KeyHandler.s"
+	@echo "... Engine/Message.o"
+	@echo "... Engine/Message.i"
+	@echo "... Engine/Message.s"
 	@echo "... Engine/Tile.o"
 	@echo "... Engine/Tile.i"
 	@echo "... Engine/Tile.s"

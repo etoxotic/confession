@@ -6,8 +6,8 @@
 
 #include "Tile.h"
 
-Tile::Tile(int x, int y, char el){
-    element = el;
+Tile::Tile(int x, int y, char _element){
+    element = _element;
     pos.x=x; pos.y=y;
     setState("default");
     font.loadFromFile("../resources/fancy.ttf");
@@ -17,8 +17,10 @@ Tile::Tile(int x, int y, char el){
     letter.setPosition(pos.x+55, pos.y+15);
 }
 
-void Tile::setState(String state){
-    state=state;
+void Tile::setState(String _state){
+    if(state != "pressed" || state != "damaged")
+        prevState = state;
+    state=_state;
     Color color;
     if(state == "default"){
         color.r=0;color.g=119;color.b=255;
@@ -58,4 +60,8 @@ Vector2f Tile::getPosition() {
 
 char Tile::getElement() {
     return element;
+}
+
+String Tile::getPrevState() {
+    return prevState;
 }

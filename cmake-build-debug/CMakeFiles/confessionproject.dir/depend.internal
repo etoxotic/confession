@@ -236,6 +236,23 @@ CMakeFiles/confessionproject.dir/Engine/Ego.cpp.o
  /home/yana/Documents/uni/процпрога/confession/confession/Engine/Ego.h
  /home/yana/Documents/uni/процпрога/confession/confession/Engine/Tile.h
 CMakeFiles/confessionproject.dir/Engine/Engine.cpp.o
+ ../resources/SFML-2.5.1/include/SFML/Audio.hpp
+ ../resources/SFML-2.5.1/include/SFML/Audio/AlResource.hpp
+ ../resources/SFML-2.5.1/include/SFML/Audio/Export.hpp
+ ../resources/SFML-2.5.1/include/SFML/Audio/InputSoundFile.hpp
+ ../resources/SFML-2.5.1/include/SFML/Audio/Listener.hpp
+ ../resources/SFML-2.5.1/include/SFML/Audio/Music.hpp
+ ../resources/SFML-2.5.1/include/SFML/Audio/OutputSoundFile.hpp
+ ../resources/SFML-2.5.1/include/SFML/Audio/Sound.hpp
+ ../resources/SFML-2.5.1/include/SFML/Audio/SoundBuffer.hpp
+ ../resources/SFML-2.5.1/include/SFML/Audio/SoundBufferRecorder.hpp
+ ../resources/SFML-2.5.1/include/SFML/Audio/SoundFileFactory.hpp
+ ../resources/SFML-2.5.1/include/SFML/Audio/SoundFileFactory.inl
+ ../resources/SFML-2.5.1/include/SFML/Audio/SoundFileReader.hpp
+ ../resources/SFML-2.5.1/include/SFML/Audio/SoundFileWriter.hpp
+ ../resources/SFML-2.5.1/include/SFML/Audio/SoundRecorder.hpp
+ ../resources/SFML-2.5.1/include/SFML/Audio/SoundSource.hpp
+ ../resources/SFML-2.5.1/include/SFML/Audio/SoundStream.hpp
  ../resources/SFML-2.5.1/include/SFML/Config.hpp
  ../resources/SFML-2.5.1/include/SFML/Graphics.hpp
  ../resources/SFML-2.5.1/include/SFML/Graphics/BlendMode.hpp
@@ -636,6 +653,9 @@ CMakeFiles/confessionproject.dir/Engine/KeyHandler.cpp.o
  ../resources/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
  /home/yana/Documents/uni/процпрога/confession/confession/Engine/KeyHandler.cpp
  /home/yana/Documents/uni/процпрога/confession/confession/Engine/KeyHandler.h
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o
+ /home/yana/Documents/uni/процпрога/confession/confession/Engine/Message.cpp
+ /home/yana/Documents/uni/процпрога/confession/confession/Engine/Message.h
 CMakeFiles/confessionproject.dir/Engine/Tile.cpp.o
  ../resources/SFML-2.5.1/include/SFML/Config.hpp
  ../resources/SFML-2.5.1/include/SFML/Graphics.hpp
@@ -714,6 +734,23 @@ CMakeFiles/confessionproject.dir/Engine/Tile.cpp.o
  /home/yana/Documents/uni/процпрога/confession/confession/Engine/Tile.cpp
  /home/yana/Documents/uni/процпрога/confession/confession/Engine/Tile.h
 CMakeFiles/confessionproject.dir/main.cpp.o
+ ../resources/SFML-2.5.1/include/SFML/Audio.hpp
+ ../resources/SFML-2.5.1/include/SFML/Audio/AlResource.hpp
+ ../resources/SFML-2.5.1/include/SFML/Audio/Export.hpp
+ ../resources/SFML-2.5.1/include/SFML/Audio/InputSoundFile.hpp
+ ../resources/SFML-2.5.1/include/SFML/Audio/Listener.hpp
+ ../resources/SFML-2.5.1/include/SFML/Audio/Music.hpp
+ ../resources/SFML-2.5.1/include/SFML/Audio/OutputSoundFile.hpp
+ ../resources/SFML-2.5.1/include/SFML/Audio/Sound.hpp
+ ../resources/SFML-2.5.1/include/SFML/Audio/SoundBuffer.hpp
+ ../resources/SFML-2.5.1/include/SFML/Audio/SoundBufferRecorder.hpp
+ ../resources/SFML-2.5.1/include/SFML/Audio/SoundFileFactory.hpp
+ ../resources/SFML-2.5.1/include/SFML/Audio/SoundFileFactory.inl
+ ../resources/SFML-2.5.1/include/SFML/Audio/SoundFileReader.hpp
+ ../resources/SFML-2.5.1/include/SFML/Audio/SoundFileWriter.hpp
+ ../resources/SFML-2.5.1/include/SFML/Audio/SoundRecorder.hpp
+ ../resources/SFML-2.5.1/include/SFML/Audio/SoundSource.hpp
+ ../resources/SFML-2.5.1/include/SFML/Audio/SoundStream.hpp
  ../resources/SFML-2.5.1/include/SFML/Config.hpp
  ../resources/SFML-2.5.1/include/SFML/Graphics.hpp
  ../resources/SFML-2.5.1/include/SFML/Graphics/BlendMode.hpp

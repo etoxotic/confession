@@ -16,32 +16,37 @@ Engine::Engine()
     resolution.y = 600;
     renderWindow.create(VideoMode(resolution.x, resolution.y),
                     "Confession");
+    renderWindow.setKeyRepeatEnabled(false);
     windowState = "startPage";
+    updatePeriod = seconds(0.1f);
 }
 
 
 void Engine::start()
 {
-    Clock clock;
+    clock.restart();
+    game = new Game();
+    generator = new Generator(0,game->getTiles(),game->getTacts(),game->getBmp());
     interface = new Interface();
-
     interface->setState(windowState);
 
     while (renderWindow.isOpen())
     {
-        while (renderWindow.pollEvent(event))
-        {
+        if(renderWindow.pollEvent(event))
             inputHandler();
-            deltaTime = clock.restart();
-            update(deltaTime.asMilliseconds());
+        if(clock.getElapsedTime() > updatePeriod){
+            update();
             draw();
+            clock.restart();
         }
     }
 }
 
 void Engine::startGame(){
-    game = new Game();
-    generator = new Generator(0,game->getTiles(),"zero");
+    if(!game->isOn())
+        game->start();
+    else
+        game->setPause(false);
 }
 
 void Engine::inputHandler()
@@ -50,7 +55,7 @@ void Engine::inputHandler()
         renderWindow.close();
     if (sf::Mouse::isButtonPressed(sf::Mouse::Left)){
         String link = interface->clickHandler();
-        if(link == "startGame"){
+        if(link == "gamePage"){
             windowState = "gamePage";
             interface->setState(windowState);
             startGame();
@@ -59,18 +64,41 @@ void Engine::inputHandler()
             windowState = "infoPage";
             interface->setState(windowState);
         }
+        if(link == "startPage"){
+            windowState = "startPage";
+            interface->setState(windowState);
+        }
+        if(link == "gamePaused"){
+            windowState = "gamePaused";
+            interface->setState(windowState);
+            game->setPause(true);
+        }
     }
-    if (event.type == sf::Event::KeyPressed && windowState == "gamePage"){
-        char key = keyHandler(event.key.code);
-        game->tilePress(key);
+    if (event.type == sf::Event::KeyPressed){
+        if(event.key.code == sf::Keyboard::Space&& windowState == "gamePage"){
+            windowState = "gamePaused";
+            interface->setState(windowState);
+            game->setPause(true);
+        }
+        else if(event.key.code == sf::Keyboard::Space && windowState == "gamePaused"){
+            windowState = "gamePage";
+            interface->setState(windowState);
+            startGame();
+        }
+        else if(windowState == "gamePage"){
+            char key = keyHandler(event.key.code);
+            game->tilePress(key);
+        }
     }
 
 }
 
-void Engine::update(float deltaTime)
+void Engine::update()
 {
     Vector2i mousePos = Mouse::getPosition(renderWindow);
-    interface->update(deltaTime, mousePos);
+    interface->update(mousePos);
+    if(windowState == "gamePage" || windowState=="gamePaused")
+        game->update();
 }
 
 void Engine::draw()
@@ -79,8 +107,9 @@ void Engine::draw()
 
     interface->draw(&renderWindow);
 
-    if(windowState == "gamePage")
+    if(windowState == "gamePage" || windowState == "gamePaused")
         game->draw(&renderWindow);
 
     renderWindow.display();
 }
+

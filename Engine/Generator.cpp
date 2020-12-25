@@ -4,9 +4,10 @@
 
 #include "Generator.h"
 
-Generator::Generator(int id, std::list<Tile*> *p_tiles, string sconf) {
-    levelId = id; tiles = p_tiles;
-    bmp = 60; schemeConf = sconf;
+Generator::Generator(int _id, list<Tile*> *_tiles, list<char> *_tacts, int* _bmp) {
+    levelId = _id; tiles = _tiles;
+    tacts = _tacts;
+    bmp = _bmp;
     list<char> line1, line2, line3;
     lines.push_back(&line1);
     lines.push_back(&line2);
@@ -19,6 +20,10 @@ void Generator::readLevel() {
     fstream levelFile;
     levelFile.open("../resources/Levels/Level"+to_string(levelId)+".txt");
     string readLine;
+    getline (levelFile, readLine);
+    *bmp = stoi(readLine);
+    getline (levelFile, readLine);
+    schemeConf = readLine;
     for (list<char> *keyLine : lines) {
         getline (levelFile, readLine);
         for (char key: readLine){
@@ -29,7 +34,7 @@ void Generator::readLevel() {
     getline (levelFile, readLine);
     for (auto key: readLine){
         if(int(key)>64 && int(key)<90)
-            tacts.push_back(key);
+            tacts->push_back(key);
     }
     levelFile.close();
     setTilesScheme();
