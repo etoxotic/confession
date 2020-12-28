@@ -1,8 +1,8 @@
-60
+30
 reverse
 RTYU
 DFGHJ
 CVBN
-  R  T  Y  U
+   RTYU DFGHJ CVBN
   
   

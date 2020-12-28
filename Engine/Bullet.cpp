@@ -9,7 +9,7 @@
 Bullet::Bullet(Tile *_tile, Time speed){
     maxRadius = 10;
     radius = 1;
-    circle.setFillColor(sf::Color::White);
+    circle.setFillColor(Color::Red);
     circle.setRadius(radius);
     collided = false;
 //    texture.loadFromFile("../resources/bullet.png");
@@ -41,18 +41,14 @@ void Bullet::update(){
 }
 
 void Bullet::draw(RenderWindow *window) {
-    window->draw(sprite);
-    window->draw(circle);
-
-
-
     Vertex line[] =
             {
                     Vertex(Vector2f(position.x+radius,position.y+radius)),
                     Vertex(center)
             };
-
     window->draw(line, 2, Lines);
+    window->draw(sprite);
+    window->draw(circle);
 }
 
 

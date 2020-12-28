@@ -44,6 +44,8 @@ private:
     bool egoLost;
     bool anotherShot;
     void messagesUpdate();
+    Texture egoTexture;
+    Sprite egoSprite;
 
 
 public:

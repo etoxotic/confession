@@ -5,7 +5,20 @@
 #include "Game.h"
 
 Game::Game(){
-    anotherShot = false;
+    firstPress = false;
+    endGame = false;
+    pause = true;
+    gameOn=false;
+    egoLost = false;
+    egoWon = false;
+    messageShown = false;
+    nTact=0;
+    kDelay=3;
+    karmaPoints = 100;
+    deltaKarmaPoints = 5;
+    egoTexture.loadFromFile("../resources/ego.png");
+    egoSprite.setTexture(egoTexture);
+    egoSprite.setPosition(280, 50);
 }
 
 void Game::start(){
@@ -15,6 +28,7 @@ void Game::start(){
     gameOn=false;
     egoLost = false;
     egoWon = false;
+    messageShown = false;
     nTact=0;
     kDelay=3;
     karmaPoints = 100;
@@ -72,7 +86,7 @@ void Game::update(Vector2i mousePos) {
             if(bullet->isCollided()) {
                 if(bullet->getTile()->isPressed()) {
                     bullet->getTile()->setState("saved");
-                    karmaPoints+=deltaKarmaPoints;
+                    karmaPoints+=3*deltaKarmaPoints;
                 }
                 else{
                     bullet->getTile()->setState("damaged");
@@ -146,6 +160,8 @@ void Game::setBullet(Tile *tile) {
 
 void Game::draw(RenderWindow *window) {
 
+    window->draw(egoSprite);
+
     for (Bullet *bullet : bullets) {
         bullet->draw(window);
     }
@@ -166,7 +182,7 @@ void Game::draw(RenderWindow *window) {
             text.setString("EGO WON");
         else if(egoLost)
             text.setString("EGO LOST");
-    text.setPosition(700-karmaPoints-60, 0);
+    text.setPosition(700-karmaPoints-80, 0);
     window->draw(text);
     RectangleShape rectangle(Vector2f(karmaPoints, 30));
     rectangle.setPosition(Vector2f(700 - karmaPoints, 10));

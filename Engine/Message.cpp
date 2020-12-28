@@ -21,8 +21,11 @@ Message::Message(String _owner, String _content) {
     backTexture.loadFromFile("../resources/message.png");
     backSprite.setTexture(backTexture);
     backSprite.setPosition(Vector2f(20,340));
-    if(owner == "")
-        texture.loadFromFile("../resources/empty.png");
+    texture.loadFromFile("../resources/empty.png");
+    if(owner == L"ЭГО")
+        texture.loadFromFile("../resources/egoava.png");
+    sprite.setTexture(texture);
+    sprite.setPosition(500, 380);
     next = new Button(Vector2f(740, 530), "borderless", "->", "next");
 }
 
@@ -36,7 +39,7 @@ void Message::update(Vector2i mousePos) {
 
 void Message::draw(RenderWindow *window) {
     window->draw(backSprite);
-//    window->draw(sprite);
+    window->draw(sprite);
     window->draw(text);
     window->draw(title);
     next->draw(window);

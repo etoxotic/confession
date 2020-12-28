@@ -77,7 +77,7 @@ void Engine::inputHandler()
     if (event.type == Event::KeyPressed){
         if(event.key.code == Keyboard::Enter && (windowState == "gamePage" || windowState == "gamePaused"))
             game->messageHandler();
-        if(event.key.code == Keyboard::Space && windowState == "gamePage"){
+        else if(event.key.code == Keyboard::Space && windowState == "gamePage"){
             windowState = "gamePaused";
             interface->setState(windowState);
             game->setPause(true);
