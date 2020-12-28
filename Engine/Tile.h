@@ -21,17 +21,21 @@ private:
     Font font;
     char element;
     Clock clock;
-    Time damagedDelta;
+    Color color;
+    Time stateDelta;
     bool isDamaged;
+    bool firstDeltaState;
 
 public:
     Tile(int x, int y, char element);
     void setState(String state);
     void draw(RenderWindow *window);
     bool isElement(char key);
+    bool isPressed();
     Vector2f getPosition();
     char getElement();
     String getPrevState();
+    void update();
 };
 
 

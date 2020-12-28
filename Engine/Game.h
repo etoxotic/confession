@@ -31,6 +31,8 @@ private:
     Time oneTact;
     Time currTime;
     Clock deltaTime;
+    float karmaPoints;
+    float deltaKarmaPoints;
     void updateField();
     void startTacts();
     void setBullet(Tile *tile);

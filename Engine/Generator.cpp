@@ -49,7 +49,6 @@ void Generator::setTilesScheme() {
             ncenter = keyLine->size();
         i++;
     }
-    cout << ncenter;
     int y = 0;
     for (auto keyLine : lines) {
         int n = keyLine->size();

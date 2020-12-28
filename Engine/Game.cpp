@@ -5,15 +5,20 @@
 #include "Game.h"
 
 Game::Game(){
+}
+
+void Game::start(){
     firstPress = false;
     endGame = false;
     pause = true;
     gameOn=false;
     nTact=0;
     kDelay=3;
-}
-
-void Game::start(){
+    karmaPoints = 100;
+    deltaKarmaPoints = 20;
+    tiles.clear();
+    bullets.clear();
+    tacts.clear();
     generator = new Generator(0,&tiles,&tacts,&bmp);
     startTacts();
 }
@@ -48,23 +53,29 @@ void Game::tilePress(char key) {
 void Game::update() {
     if(!pause){
         currTime += deltaTime.getElapsedTime();
-        for (Bullet *bullet : bullets) {
+        for (Bullet *bullet : bullets)
             bullet->update();
-            if(bullet->isCollided()){
-                bullet->getTile()->setState("damaged");
+
+        for(Bullet *bullet : bullets) {
+            if(bullet->isCollided()) {
+                if(bullet->getTile()->isPressed()) {
+                    bullet->getTile()->setState("saved");
+                    karmaPoints+=deltaKarmaPoints;
+                }
+                else{
+                    bullet->getTile()->setState("damaged");
+                    karmaPoints-=deltaKarmaPoints;
+                }
+                bullets.remove(bullet);
+                break;
             }
         }
-        Bullet *deleteBullet;
-        bool deleteFlag = false;
-        for(Bullet *bullet : bullets){
-            if(bullet->getCollided()){
-                bullet->getTile()->setState(bullet->getTile()->getPrevState());
-                deleteBullet = bullet;
-                deleteFlag = true;
-            }
+
+        if(karmaPoints <= 0){
+            endGame = true;
+            pause = true;
+            return;
         }
-        if (deleteFlag)
-            bullets.remove(deleteBullet);
 
         if (currTime > oneTact){
             deltaTime.restart();
@@ -76,6 +87,18 @@ void Game::update() {
             updateField();
         }
 
+        for (Tile *tile : tiles){
+            tile->update();
+            if(!tile->isPressed()){
+                tile->setState(tile->getPrevState());
+                bool flag = true;
+                for(Bullet *bullet : bullets)
+                    if(bullet->getTile() == tile)
+                        flag = false;
+                if(flag)
+                    tile->setState("default");
+            }
+        }
     }
 }
 
@@ -101,15 +124,22 @@ void Game::draw(RenderWindow *window) {
     for (Tile *tile : tiles) {
         tile->draw(window);
     }
+
+    RectangleShape rectangle(Vector2f(karmaPoints, 30));
+    rectangle.setPosition(Vector2f(700 - karmaPoints, 10));
+    window->draw(rectangle);
 }
 
 void Game::setPause(bool flag) {
-    pause = flag;
-    for(Bullet *bullet : bullets)
-        bullet->setPause(flag);
+    if(!endGame){
+        pause = flag;
+        for(Bullet *bullet : bullets)
+            bullet->setPause(flag);
 
-    if(!flag)
-        deltaTime.restart();
+        if(!flag)
+            deltaTime.restart();
+    }
+
 }
 
 
