@@ -21,6 +21,7 @@ void Interface::setState(String state){
         setText(150,50,"logo","CONFESSION");
         setText(334,150,"text",L"ИСПОВЕДЬ");
         setText(0,560,"tinytext","dev ver.");
+        setText(270 ,550,"tinytext", L"Советуем использовать наушники");
         setText(710,560,"tinytext","@etoxotic");
         setButton(250,250,"normal","PLAY","gamePage");
         setButton(380, 380, "borderless", "INFO", "infoPage");

@@ -864,29 +864,9 @@ iostream
 SFML/Graphics.hpp
 -
 
-/home/yana/Documents/uni/процпрога/confession/confession/Engine/Engine.cpp
-Engine.h
-/home/yana/Documents/uni/процпрога/confession/confession/Engine/Engine.h
-
-/home/yana/Documents/uni/процпрога/confession/confession/Engine/Engine.h
-Tile.h
-/home/yana/Documents/uni/процпрога/confession/confession/Engine/Tile.h
-Bullet.h
-/home/yana/Documents/uni/процпрога/confession/confession/Engine/Bullet.h
-Interface.h
-/home/yana/Documents/uni/процпрога/confession/confession/Engine/Interface.h
+/home/yana/Documents/uni/процпрога/confession/confession/Engine/Game.cpp
 Game.h
 /home/yana/Documents/uni/процпрога/confession/confession/Engine/Game.h
-KeyHandler.h
-/home/yana/Documents/uni/процпрога/confession/confession/Engine/KeyHandler.h
-SFML/Graphics.hpp
--
-list
--
-fstream
--
-SFML/Audio.hpp
--
 
 /home/yana/Documents/uni/процпрога/confession/confession/Engine/Game.h
 Tile.h
@@ -900,6 +880,8 @@ Generator.h
 Message.h
 /home/yana/Documents/uni/процпрога/confession/confession/Engine/Message.h
 SFML/Graphics.hpp
+-
+SFML/Audio.hpp
 -
 list
 -
@@ -924,10 +906,6 @@ SFML/Graphics.hpp
 Button.h
 /home/yana/Documents/uni/процпрога/confession/confession/Engine/Button.h
 list
--
-
-/home/yana/Documents/uni/процпрога/confession/confession/Engine/KeyHandler.h
-SFML/Graphics.hpp
 -
 
 /home/yana/Documents/uni/процпрога/confession/confession/Engine/Message.h

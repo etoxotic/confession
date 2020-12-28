@@ -36,6 +36,10 @@ private:
     void eventHandler();
     void startGame();
     void playIntro();
+    SoundBuffer musicBuffer;
+    Sound music;
+    SoundBuffer endBuffer;
+    Sound endSound;
 
 public:
     Engine();

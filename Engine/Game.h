@@ -12,6 +12,7 @@
 #include "Generator.h"
 #include "Message.h"
 #include <SFML/Graphics.hpp>
+#include <SFML/Audio.hpp>
 #include <list>
 
 class Game {
@@ -46,6 +47,11 @@ private:
     void messagesUpdate();
     Texture egoTexture;
     Sprite egoSprite;
+    SoundBuffer musicBuffer;
+    Sound music;
+    SoundBuffer endBuffer;
+    Sound endSound;
+    void endGameAction();
 
 
 public:
@@ -58,6 +64,7 @@ public:
     bool isEnded();
     bool isOn();
     bool isMessageShown();
+    bool isIntroPassed();
     void messageHandler();
     void clickHandler();
     void setMessage(String owner, String content);

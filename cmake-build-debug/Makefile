@@ -131,17 +131,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named confessionproject
+# Target rules for targets named confession
 
 # Build rule for target.
-confessionproject: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 confessionproject
-.PHONY : confessionproject
+confession: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 confession
+.PHONY : confession
 
 # fast build rule for target.
-confessionproject/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/build
-.PHONY : confessionproject/fast
+confession/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/confession.dir/build.make CMakeFiles/confession.dir/build
+.PHONY : confession/fast
 
 Engine/Bullet.o: Engine/Bullet.cpp.o
 
@@ -149,7 +149,7 @@ Engine/Bullet.o: Engine/Bullet.cpp.o
 
 # target to build an object file
 Engine/Bullet.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/Engine/Bullet.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/confession.dir/build.make CMakeFiles/confession.dir/Engine/Bullet.cpp.o
 .PHONY : Engine/Bullet.cpp.o
 
 Engine/Bullet.i: Engine/Bullet.cpp.i
@@ -158,7 +158,7 @@ Engine/Bullet.i: Engine/Bullet.cpp.i
 
 # target to preprocess a source file
 Engine/Bullet.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/Engine/Bullet.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/confession.dir/build.make CMakeFiles/confession.dir/Engine/Bullet.cpp.i
 .PHONY : Engine/Bullet.cpp.i
 
 Engine/Bullet.s: Engine/Bullet.cpp.s
@@ -167,7 +167,7 @@ Engine/Bullet.s: Engine/Bullet.cpp.s
 
 # target to generate assembly for a file
 Engine/Bullet.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/Engine/Bullet.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/confession.dir/build.make CMakeFiles/confession.dir/Engine/Bullet.cpp.s
 .PHONY : Engine/Bullet.cpp.s
 
 Engine/Button.o: Engine/Button.cpp.o
@@ -176,7 +176,7 @@ Engine/Button.o: Engine/Button.cpp.o
 
 # target to build an object file
 Engine/Button.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/Engine/Button.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/confession.dir/build.make CMakeFiles/confession.dir/Engine/Button.cpp.o
 .PHONY : Engine/Button.cpp.o
 
 Engine/Button.i: Engine/Button.cpp.i
@@ -185,7 +185,7 @@ Engine/Button.i: Engine/Button.cpp.i
 
 # target to preprocess a source file
 Engine/Button.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/Engine/Button.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/confession.dir/build.make CMakeFiles/confession.dir/Engine/Button.cpp.i
 .PHONY : Engine/Button.cpp.i
 
 Engine/Button.s: Engine/Button.cpp.s
@@ -194,7 +194,7 @@ Engine/Button.s: Engine/Button.cpp.s
 
 # target to generate assembly for a file
 Engine/Button.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/Engine/Button.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/confession.dir/build.make CMakeFiles/confession.dir/Engine/Button.cpp.s
 .PHONY : Engine/Button.cpp.s
 
 Engine/Engine.o: Engine/Engine.cpp.o
@@ -203,7 +203,7 @@ Engine/Engine.o: Engine/Engine.cpp.o
 
 # target to build an object file
 Engine/Engine.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/Engine/Engine.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/confession.dir/build.make CMakeFiles/confession.dir/Engine/Engine.cpp.o
 .PHONY : Engine/Engine.cpp.o
 
 Engine/Engine.i: Engine/Engine.cpp.i
@@ -212,7 +212,7 @@ Engine/Engine.i: Engine/Engine.cpp.i
 
 # target to preprocess a source file
 Engine/Engine.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/Engine/Engine.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/confession.dir/build.make CMakeFiles/confession.dir/Engine/Engine.cpp.i
 .PHONY : Engine/Engine.cpp.i
 
 Engine/Engine.s: Engine/Engine.cpp.s
@@ -221,7 +221,7 @@ Engine/Engine.s: Engine/Engine.cpp.s
 
 # target to generate assembly for a file
 Engine/Engine.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/Engine/Engine.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/confession.dir/build.make CMakeFiles/confession.dir/Engine/Engine.cpp.s
 .PHONY : Engine/Engine.cpp.s
 
 Engine/Game.o: Engine/Game.cpp.o
@@ -230,7 +230,7 @@ Engine/Game.o: Engine/Game.cpp.o
 
 # target to build an object file
 Engine/Game.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/Engine/Game.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/confession.dir/build.make CMakeFiles/confession.dir/Engine/Game.cpp.o
 .PHONY : Engine/Game.cpp.o
 
 Engine/Game.i: Engine/Game.cpp.i
@@ -239,7 +239,7 @@ Engine/Game.i: Engine/Game.cpp.i
 
 # target to preprocess a source file
 Engine/Game.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/Engine/Game.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/confession.dir/build.make CMakeFiles/confession.dir/Engine/Game.cpp.i
 .PHONY : Engine/Game.cpp.i
 
 Engine/Game.s: Engine/Game.cpp.s
@@ -248,7 +248,7 @@ Engine/Game.s: Engine/Game.cpp.s
 
 # target to generate assembly for a file
 Engine/Game.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/Engine/Game.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/confession.dir/build.make CMakeFiles/confession.dir/Engine/Game.cpp.s
 .PHONY : Engine/Game.cpp.s
 
 Engine/Generator.o: Engine/Generator.cpp.o
@@ -257,7 +257,7 @@ Engine/Generator.o: Engine/Generator.cpp.o
 
 # target to build an object file
 Engine/Generator.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/Engine/Generator.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/confession.dir/build.make CMakeFiles/confession.dir/Engine/Generator.cpp.o
 .PHONY : Engine/Generator.cpp.o
 
 Engine/Generator.i: Engine/Generator.cpp.i
@@ -266,7 +266,7 @@ Engine/Generator.i: Engine/Generator.cpp.i
 
 # target to preprocess a source file
 Engine/Generator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/Engine/Generator.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/confession.dir/build.make CMakeFiles/confession.dir/Engine/Generator.cpp.i
 .PHONY : Engine/Generator.cpp.i
 
 Engine/Generator.s: Engine/Generator.cpp.s
@@ -275,7 +275,7 @@ Engine/Generator.s: Engine/Generator.cpp.s
 
 # target to generate assembly for a file
 Engine/Generator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/Engine/Generator.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/confession.dir/build.make CMakeFiles/confession.dir/Engine/Generator.cpp.s
 .PHONY : Engine/Generator.cpp.s
 
 Engine/Interface.o: Engine/Interface.cpp.o
@@ -284,7 +284,7 @@ Engine/Interface.o: Engine/Interface.cpp.o
 
 # target to build an object file
 Engine/Interface.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/Engine/Interface.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/confession.dir/build.make CMakeFiles/confession.dir/Engine/Interface.cpp.o
 .PHONY : Engine/Interface.cpp.o
 
 Engine/Interface.i: Engine/Interface.cpp.i
@@ -293,7 +293,7 @@ Engine/Interface.i: Engine/Interface.cpp.i
 
 # target to preprocess a source file
 Engine/Interface.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/Engine/Interface.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/confession.dir/build.make CMakeFiles/confession.dir/Engine/Interface.cpp.i
 .PHONY : Engine/Interface.cpp.i
 
 Engine/Interface.s: Engine/Interface.cpp.s
@@ -302,7 +302,7 @@ Engine/Interface.s: Engine/Interface.cpp.s
 
 # target to generate assembly for a file
 Engine/Interface.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/Engine/Interface.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/confession.dir/build.make CMakeFiles/confession.dir/Engine/Interface.cpp.s
 .PHONY : Engine/Interface.cpp.s
 
 Engine/KeyHandler.o: Engine/KeyHandler.cpp.o
@@ -311,7 +311,7 @@ Engine/KeyHandler.o: Engine/KeyHandler.cpp.o
 
 # target to build an object file
 Engine/KeyHandler.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/Engine/KeyHandler.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/confession.dir/build.make CMakeFiles/confession.dir/Engine/KeyHandler.cpp.o
 .PHONY : Engine/KeyHandler.cpp.o
 
 Engine/KeyHandler.i: Engine/KeyHandler.cpp.i
@@ -320,7 +320,7 @@ Engine/KeyHandler.i: Engine/KeyHandler.cpp.i
 
 # target to preprocess a source file
 Engine/KeyHandler.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/Engine/KeyHandler.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/confession.dir/build.make CMakeFiles/confession.dir/Engine/KeyHandler.cpp.i
 .PHONY : Engine/KeyHandler.cpp.i
 
 Engine/KeyHandler.s: Engine/KeyHandler.cpp.s
@@ -329,7 +329,7 @@ Engine/KeyHandler.s: Engine/KeyHandler.cpp.s
 
 # target to generate assembly for a file
 Engine/KeyHandler.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/Engine/KeyHandler.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/confession.dir/build.make CMakeFiles/confession.dir/Engine/KeyHandler.cpp.s
 .PHONY : Engine/KeyHandler.cpp.s
 
 Engine/Message.o: Engine/Message.cpp.o
@@ -338,7 +338,7 @@ Engine/Message.o: Engine/Message.cpp.o
 
 # target to build an object file
 Engine/Message.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/Engine/Message.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/confession.dir/build.make CMakeFiles/confession.dir/Engine/Message.cpp.o
 .PHONY : Engine/Message.cpp.o
 
 Engine/Message.i: Engine/Message.cpp.i
@@ -347,7 +347,7 @@ Engine/Message.i: Engine/Message.cpp.i
 
 # target to preprocess a source file
 Engine/Message.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/Engine/Message.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/confession.dir/build.make CMakeFiles/confession.dir/Engine/Message.cpp.i
 .PHONY : Engine/Message.cpp.i
 
 Engine/Message.s: Engine/Message.cpp.s
@@ -356,7 +356,7 @@ Engine/Message.s: Engine/Message.cpp.s
 
 # target to generate assembly for a file
 Engine/Message.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/Engine/Message.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/confession.dir/build.make CMakeFiles/confession.dir/Engine/Message.cpp.s
 .PHONY : Engine/Message.cpp.s
 
 Engine/Tile.o: Engine/Tile.cpp.o
@@ -365,7 +365,7 @@ Engine/Tile.o: Engine/Tile.cpp.o
 
 # target to build an object file
 Engine/Tile.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/Engine/Tile.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/confession.dir/build.make CMakeFiles/confession.dir/Engine/Tile.cpp.o
 .PHONY : Engine/Tile.cpp.o
 
 Engine/Tile.i: Engine/Tile.cpp.i
@@ -374,7 +374,7 @@ Engine/Tile.i: Engine/Tile.cpp.i
 
 # target to preprocess a source file
 Engine/Tile.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/Engine/Tile.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/confession.dir/build.make CMakeFiles/confession.dir/Engine/Tile.cpp.i
 .PHONY : Engine/Tile.cpp.i
 
 Engine/Tile.s: Engine/Tile.cpp.s
@@ -383,7 +383,7 @@ Engine/Tile.s: Engine/Tile.cpp.s
 
 # target to generate assembly for a file
 Engine/Tile.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/Engine/Tile.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/confession.dir/build.make CMakeFiles/confession.dir/Engine/Tile.cpp.s
 .PHONY : Engine/Tile.cpp.s
 
 Engine/messageHandler.o: Engine/messageHandler.cpp.o
@@ -392,7 +392,7 @@ Engine/messageHandler.o: Engine/messageHandler.cpp.o
 
 # target to build an object file
 Engine/messageHandler.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/Engine/messageHandler.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/confession.dir/build.make CMakeFiles/confession.dir/Engine/messageHandler.cpp.o
 .PHONY : Engine/messageHandler.cpp.o
 
 Engine/messageHandler.i: Engine/messageHandler.cpp.i
@@ -401,7 +401,7 @@ Engine/messageHandler.i: Engine/messageHandler.cpp.i
 
 # target to preprocess a source file
 Engine/messageHandler.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/Engine/messageHandler.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/confession.dir/build.make CMakeFiles/confession.dir/Engine/messageHandler.cpp.i
 .PHONY : Engine/messageHandler.cpp.i
 
 Engine/messageHandler.s: Engine/messageHandler.cpp.s
@@ -410,7 +410,7 @@ Engine/messageHandler.s: Engine/messageHandler.cpp.s
 
 # target to generate assembly for a file
 Engine/messageHandler.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/Engine/messageHandler.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/confession.dir/build.make CMakeFiles/confession.dir/Engine/messageHandler.cpp.s
 .PHONY : Engine/messageHandler.cpp.s
 
 main.o: main.cpp.o
@@ -419,7 +419,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/confession.dir/build.make CMakeFiles/confession.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -428,7 +428,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/confession.dir/build.make CMakeFiles/confession.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -437,7 +437,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/confession.dir/build.make CMakeFiles/confession.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -448,7 +448,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... confessionproject"
+	@echo "... confession"
 	@echo "... Engine/Bullet.o"
 	@echo "... Engine/Bullet.i"
 	@echo "... Engine/Bullet.s"

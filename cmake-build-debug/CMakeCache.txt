@@ -156,7 +156,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=confessionproject
+CMAKE_PROJECT_NAME:STATIC=confession
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -228,6 +228,12 @@ ProcessorCount_cmd_sysctl:FILEPATH=/usr/sbin/sysctl
 
 //Path to a file.
 SFML_DOC_DIR:PATH=SFML_DOC_DIR-NOTFOUND
+
+//Value Computed by CMake
+confession_BINARY_DIR:STATIC=/home/yana/Documents/uni/процпрога/confession/confession/cmake-build-debug
+
+//Value Computed by CMake
+confession_SOURCE_DIR:STATIC=/home/yana/Documents/uni/процпрога/confession/confession
 
 //Value Computed by CMake
 confessionproject_BINARY_DIR:STATIC=/home/yana/Documents/uni/процпрога/confession/confession/cmake-build-debug

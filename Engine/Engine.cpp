@@ -19,6 +19,11 @@ Engine::Engine()
     renderWindow.setKeyRepeatEnabled(false);
     windowState = "startPage";
     updatePeriod = seconds(0.1f);
+    musicBuffer.loadFromFile("../resources/intro.ogg");
+    music.setBuffer(musicBuffer);
+    music.setLoop(true);
+    endBuffer.loadFromFile("../resources/endoftrack.ogg");
+    endSound.setBuffer(endBuffer);
 }
 
 
@@ -28,6 +33,7 @@ void Engine::start()
     game = new Game();
     interface = new Interface();
     interface->setState(windowState);
+    music.play();
 
     while (renderWindow.isOpen())
     {
@@ -42,9 +48,12 @@ void Engine::start()
 }
 
 void Engine::startGame(){
-    if(!game->isOn())
+    music.pause();
+    if(!game->isOn()){
+        endSound.play();
         game->start();
-    else
+    }
+    else if(game->isIntroPassed())
         game->setPause(false);
 }
 
@@ -65,8 +74,11 @@ void Engine::inputHandler()
             interface->setState(windowState);
         }
         if(link == "startPage"){
+            music.play();
             windowState = "startPage";
             interface->setState(windowState);
+            if(game->isOn())
+                game->setPause(true);
         }
         if(link == "gamePaused"){
             windowState = "gamePaused";

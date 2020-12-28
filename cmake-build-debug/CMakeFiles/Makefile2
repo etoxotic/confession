@@ -73,7 +73,7 @@ CMAKE_BINARY_DIR = /home/yana/Documents/uni/процпрога/confession/confes
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/confessionproject.dir/all
+all: CMakeFiles/confession.dir/all
 
 .PHONY : all
 
@@ -83,36 +83,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/confessionproject.dir/clean
+clean: CMakeFiles/confession.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/confessionproject.dir
+# Target rules for target CMakeFiles/confession.dir
 
 # All Build rule for target.
-CMakeFiles/confessionproject.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yana/Documents/uni/процпрога/confession/confession/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12 "Built target confessionproject"
-.PHONY : CMakeFiles/confessionproject.dir/all
+CMakeFiles/confession.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/confession.dir/build.make CMakeFiles/confession.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/confession.dir/build.make CMakeFiles/confession.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yana/Documents/uni/процпрога/confession/confession/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12 "Built target confession"
+.PHONY : CMakeFiles/confession.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/confessionproject.dir/rule: cmake_check_build_system
+CMakeFiles/confession.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yana/Documents/uni/процпрога/confession/confession/cmake-build-debug/CMakeFiles 12
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/confessionproject.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/confession.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yana/Documents/uni/процпрога/confession/confession/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/confessionproject.dir/rule
+.PHONY : CMakeFiles/confession.dir/rule
 
 # Convenience name for target.
-confessionproject: CMakeFiles/confessionproject.dir/rule
+confession: CMakeFiles/confession.dir/rule
 
-.PHONY : confessionproject
+.PHONY : confession
 
 # clean rule for target.
-CMakeFiles/confessionproject.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/clean
-.PHONY : CMakeFiles/confessionproject.dir/clean
+CMakeFiles/confession.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/confession.dir/build.make CMakeFiles/confession.dir/clean
+.PHONY : CMakeFiles/confession.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -15,40 +15,45 @@ Game::Game(){
     nTact=0;
     kDelay=3;
     karmaPoints = 100;
-    deltaKarmaPoints = 5;
+    deltaKarmaPoints = 1;
     egoTexture.loadFromFile("../resources/ego.png");
     egoSprite.setTexture(egoTexture);
     egoSprite.setPosition(280, 50);
 }
 
 void Game::start(){
+    musicBuffer.loadFromFile("../resources/game.ogg");
+    music.setBuffer(musicBuffer);
+    music.setLoop(true);
+    endBuffer.loadFromFile("../resources/endoftrack.ogg");
+    endSound.setBuffer(endBuffer);
     firstPress = false;
     endGame = false;
     pause = true;
-    gameOn=false;
+    gameOn=true;
     egoLost = false;
     egoWon = false;
     messageShown = false;
     nTact=0;
-    kDelay=3;
+    kDelay=2;
     karmaPoints = 100;
-    deltaKarmaPoints = 20;
+    deltaKarmaPoints = 1;
+    nMessage = 0;
     tiles.clear();
     bullets.clear();
     tacts.clear();
     generator = new Generator(0,&tiles,&tacts,&bmp);
-    startTacts();
 }
 
 void Game::startTacts(){
+    music.play();
     nTact=1;
     gameOn = true;
-    pause = false;
+    setPause(false);
     currTact = tacts.begin();
     oneTact = seconds(60/float(bmp));
     deltaTime.restart();
     currTime = seconds(0);
-    nMessage = 0;
     updateField();
 };
 
@@ -77,6 +82,7 @@ void Game::update(Vector2i mousePos) {
     }
 
     if(!pause){
+
         currTime += deltaTime.getElapsedTime();
 
         for (Bullet *bullet : bullets)
@@ -86,7 +92,7 @@ void Game::update(Vector2i mousePos) {
             if(bullet->isCollided()) {
                 if(bullet->getTile()->isPressed()) {
                     bullet->getTile()->setState("saved");
-                    karmaPoints+=3*deltaKarmaPoints;
+                    karmaPoints+=deltaKarmaPoints;
                 }
                 else{
                     bullet->getTile()->setState("damaged");
@@ -98,17 +104,13 @@ void Game::update(Vector2i mousePos) {
         }
 
         if(karmaPoints <= 0){
-            endGame = true;
             egoWon = true;
-            pause = true;
-            anotherShot = true;
+            endGameAction();
             return;
         }
         if(karmaPoints >= 500){
-            endGame = true;
             egoLost = true;
-            pause = true;
-            anotherShot = true;
+            endGameAction();
             return;
         }
 
@@ -159,7 +161,6 @@ void Game::setBullet(Tile *tile) {
 }
 
 void Game::draw(RenderWindow *window) {
-
     window->draw(egoSprite);
 
     for (Bullet *bullet : bullets) {
@@ -193,7 +194,18 @@ void Game::draw(RenderWindow *window) {
 
 }
 
+void Game::endGameAction() {
+    anotherShot = true;
+    endGame = true;
+    setPause(true);
+    endSound.play();
+}
+
 void Game::setPause(bool flag) {
+    if(flag)
+        music.pause();
+    else if(!endGame)
+        music.play();
     if(!endGame){
         pause = flag;
         for(Bullet *bullet : bullets)
@@ -202,6 +214,8 @@ void Game::setPause(bool flag) {
         if(!flag)
             deltaTime.restart();
     }
+    if(endGame)
+        pause = true;
 }
 
 void Game::setMessage(String owner, String content) {
@@ -223,7 +237,6 @@ void Game::clickHandler() {
             messageHandler();
 }
 
-
 bool Game::isEnded() {
     return endGame;
 }
@@ -232,6 +245,10 @@ bool Game::isOn(){
 }
 bool Game::isMessageShown() {
     return messageShown;
+}
+
+bool Game::isIntroPassed() {
+    return (nMessage > 11 ? true : false);
 }
 
 
@@ -286,22 +303,26 @@ void Game::messagesUpdate() {
         setMessage(L"ЭГО", L"ХОЧЕШЬ ОТДАТЬ ЕЩЕ ОДНУ ИСПОВЕДЬ?\n");
         nMessage++;
     }
-    if(egoLost && endGame && !messageShown && nMessage == 11)
-    {
-        setMessage(L"", L"Произошел раскол ЭГО!\nЧто, в принципе, означает, что вы победили уровень.");
+    if(!messageShown && nMessage == 11){
+        startTacts();
         nMessage++;
     }
-    if(egoWon && endGame && !messageShown && nMessage == 11)
+    if(egoLost && endGame && !messageShown && nMessage == 12)
+    {
+        setMessage(L"", L"Произошел раскол ЭГО!\nЧто, в принципе, означает, что вы победили.");
+        nMessage++;
+    }
+    if(egoWon && endGame && !messageShown && nMessage == 12)
     {
         setMessage(L"", L"ЭГО добилось вашей ИСПОВЕДИ - вы признали его доминантность!\nЧто, в принципе, означает, что вы проиграли.");
         nMessage++;
     }
-    if(endGame && !messageShown && nMessage == 12)
+    if(endGame && !messageShown && nMessage == 13)
     {
         setMessage(L"", L"Нажмите \"дальше\", если хотите сыграть снова");
         nMessage++;
     }
-    if(endGame && !messageShown && nMessage == 13)
+    if(endGame && !messageShown && nMessage == 14)
     {
         start();
     }
