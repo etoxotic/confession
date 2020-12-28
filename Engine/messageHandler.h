@@ -1,0 +1,14 @@
+//
+// Created by yana on 28.12.2020.
+//
+
+#ifndef CONFESSIONPROJECT_MESSAGEHANDLER_H
+#define CONFESSIONPROJECT_MESSAGEHANDLER_H
+
+
+class messageHandler {
+
+};
+
+
+#endif //CONFESSIONPROJECT_MESSAGEHANDLER_H

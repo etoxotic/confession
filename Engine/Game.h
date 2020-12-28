@@ -10,6 +10,7 @@
 #include "Bullet.h"
 #include "Interface.h"
 #include "Generator.h"
+#include "Message.h"
 #include <SFML/Graphics.hpp>
 #include <list>
 
@@ -36,16 +37,30 @@ private:
     void updateField();
     void startTacts();
     void setBullet(Tile *tile);
+    Message *message;
+    int nMessage;
+    bool messageShown;
+    bool egoWon;
+    bool egoLost;
+    bool anotherShot;
+    void messagesUpdate();
+
 
 public:
     Game();
     void start();
     void setPause(bool flag);
     void draw(RenderWindow *window);
-    void update();
+    void update(Vector2i mousePos);
     void tilePress(char key);
     bool isEnded();
     bool isOn();
+    bool isMessageShown();
+    void messageHandler();
+    void clickHandler();
+    void setMessage(String owner, String content);
+
+
 };
 
 

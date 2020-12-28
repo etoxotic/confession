@@ -43,6 +43,16 @@ void Bullet::update(){
 void Bullet::draw(RenderWindow *window) {
     window->draw(sprite);
     window->draw(circle);
+
+
+
+    Vertex line[] =
+            {
+                    Vertex(Vector2f(position.x+radius,position.y+radius)),
+                    Vertex(center)
+            };
+
+    window->draw(line, 2, Lines);
 }
 
 

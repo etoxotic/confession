@@ -29,6 +29,7 @@ private:
     void setTilesScheme();
     void generateTacts();
     void readLevel();
+
 public:
     Generator(int levelId, list<Tile*> *tiles, list<char> *tacts, int*bmp);
 

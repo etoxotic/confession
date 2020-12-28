@@ -255,6 +255,7 @@ CMakeFiles/confessionproject.dir/Engine/Engine.cpp.o: ../Engine/Game.h
 CMakeFiles/confessionproject.dir/Engine/Engine.cpp.o: ../Engine/Generator.h
 CMakeFiles/confessionproject.dir/Engine/Engine.cpp.o: ../Engine/Interface.h
 CMakeFiles/confessionproject.dir/Engine/Engine.cpp.o: ../Engine/KeyHandler.h
+CMakeFiles/confessionproject.dir/Engine/Engine.cpp.o: ../Engine/Message.h
 CMakeFiles/confessionproject.dir/Engine/Engine.cpp.o: ../Engine/Tile.h
 
 CMakeFiles/confessionproject.dir/Engine/Game.cpp.o: ../resources/SFML-2.5.1/include/SFML/Config.hpp
@@ -337,6 +338,7 @@ CMakeFiles/confessionproject.dir/Engine/Game.cpp.o: ../Engine/Game.cpp
 CMakeFiles/confessionproject.dir/Engine/Game.cpp.o: ../Engine/Game.h
 CMakeFiles/confessionproject.dir/Engine/Game.cpp.o: ../Engine/Generator.h
 CMakeFiles/confessionproject.dir/Engine/Game.cpp.o: ../Engine/Interface.h
+CMakeFiles/confessionproject.dir/Engine/Game.cpp.o: ../Engine/Message.h
 CMakeFiles/confessionproject.dir/Engine/Game.cpp.o: ../Engine/Tile.h
 
 CMakeFiles/confessionproject.dir/Engine/Generator.cpp.o: ../resources/SFML-2.5.1/include/SFML/Config.hpp
@@ -572,6 +574,81 @@ CMakeFiles/confessionproject.dir/Engine/KeyHandler.cpp.o: ../resources/SFML-2.5.
 CMakeFiles/confessionproject.dir/Engine/KeyHandler.cpp.o: ../Engine/KeyHandler.cpp
 CMakeFiles/confessionproject.dir/Engine/KeyHandler.cpp.o: ../Engine/KeyHandler.h
 
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/Config.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/Graphics.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/Graphics/BlendMode.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/Graphics/CircleShape.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/Graphics/Color.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/Graphics/ConvexShape.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/Graphics/Drawable.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/Graphics/Export.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/Graphics/Font.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/Graphics/Glsl.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/Graphics/Glsl.inl
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/Graphics/Glyph.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/Graphics/Image.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/Graphics/PrimitiveType.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/Graphics/Rect.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/Graphics/Rect.inl
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/Graphics/RectangleShape.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/Graphics/RenderStates.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/Graphics/RenderTarget.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/Graphics/RenderTexture.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/Graphics/RenderWindow.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/Graphics/Shader.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/Graphics/Shape.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/Graphics/Sprite.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/Graphics/Text.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/Graphics/Texture.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/Graphics/Transform.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/Graphics/Transformable.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/Graphics/Vertex.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/Graphics/VertexArray.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/Graphics/VertexBuffer.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/Graphics/View.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/System.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/System/Clock.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/System/Err.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/System/Export.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/System/FileInputStream.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/System/InputStream.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/System/Lock.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/System/MemoryInputStream.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/System/Mutex.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/System/NonCopyable.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/System/Sleep.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/System/String.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/System/String.inl
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/System/Thread.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/System/Thread.inl
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/System/ThreadLocal.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/System/ThreadLocalPtr.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/System/ThreadLocalPtr.inl
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/System/Time.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/System/Utf.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/System/Utf.inl
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/System/Vector2.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/System/Vector2.inl
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/System/Vector3.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/System/Vector3.inl
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/Window.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/Window/Clipboard.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/Window/Context.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/Window/ContextSettings.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/Window/Cursor.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/Window/Event.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/Window/Export.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/Window/GlResource.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/Window/Joystick.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/Window/Keyboard.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/Window/Mouse.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/Window/Sensor.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/Window/Touch.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/Window/VideoMode.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/Window/Window.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../resources/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
+CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../Engine/Button.h
 CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../Engine/Message.cpp
 CMakeFiles/confessionproject.dir/Engine/Message.cpp.o: ../Engine/Message.h
 
@@ -651,6 +728,9 @@ CMakeFiles/confessionproject.dir/Engine/Tile.cpp.o: ../resources/SFML-2.5.1/incl
 CMakeFiles/confessionproject.dir/Engine/Tile.cpp.o: ../resources/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
 CMakeFiles/confessionproject.dir/Engine/Tile.cpp.o: ../Engine/Tile.cpp
 CMakeFiles/confessionproject.dir/Engine/Tile.cpp.o: ../Engine/Tile.h
+
+CMakeFiles/confessionproject.dir/Engine/messageHandler.cpp.o: ../Engine/messageHandler.cpp
+CMakeFiles/confessionproject.dir/Engine/messageHandler.cpp.o: ../Engine/messageHandler.h
 
 CMakeFiles/confessionproject.dir/main.cpp.o: ../resources/SFML-2.5.1/include/SFML/Audio.hpp
 CMakeFiles/confessionproject.dir/main.cpp.o: ../resources/SFML-2.5.1/include/SFML/Audio/AlResource.hpp
@@ -750,6 +830,7 @@ CMakeFiles/confessionproject.dir/main.cpp.o: ../Engine/Game.h
 CMakeFiles/confessionproject.dir/main.cpp.o: ../Engine/Generator.h
 CMakeFiles/confessionproject.dir/main.cpp.o: ../Engine/Interface.h
 CMakeFiles/confessionproject.dir/main.cpp.o: ../Engine/KeyHandler.h
+CMakeFiles/confessionproject.dir/main.cpp.o: ../Engine/Message.h
 CMakeFiles/confessionproject.dir/main.cpp.o: ../Engine/Tile.h
 CMakeFiles/confessionproject.dir/main.cpp.o: ../main.cpp
 

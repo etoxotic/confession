@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/yana/Documents/uni/процпрога/confession/confession/Engine/KeyHandler.cpp" "/home/yana/Documents/uni/процпрога/confession/confession/cmake-build-debug/CMakeFiles/confessionproject.dir/Engine/KeyHandler.cpp.o"
   "/home/yana/Documents/uni/процпрога/confession/confession/Engine/Message.cpp" "/home/yana/Documents/uni/процпрога/confession/confession/cmake-build-debug/CMakeFiles/confessionproject.dir/Engine/Message.cpp.o"
   "/home/yana/Documents/uni/процпрога/confession/confession/Engine/Tile.cpp" "/home/yana/Documents/uni/процпрога/confession/confession/cmake-build-debug/CMakeFiles/confessionproject.dir/Engine/Tile.cpp.o"
+  "/home/yana/Documents/uni/процпрога/confession/confession/Engine/messageHandler.cpp" "/home/yana/Documents/uni/процпрога/confession/confession/cmake-build-debug/CMakeFiles/confessionproject.dir/Engine/messageHandler.cpp.o"
   "/home/yana/Documents/uni/процпрога/confession/confession/main.cpp" "/home/yana/Documents/uni/процпрога/confession/confession/cmake-build-debug/CMakeFiles/confessionproject.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

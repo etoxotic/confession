@@ -386,6 +386,33 @@ Engine/Tile.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/Engine/Tile.cpp.s
 .PHONY : Engine/Tile.cpp.s
 
+Engine/messageHandler.o: Engine/messageHandler.cpp.o
+
+.PHONY : Engine/messageHandler.o
+
+# target to build an object file
+Engine/messageHandler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/Engine/messageHandler.cpp.o
+.PHONY : Engine/messageHandler.cpp.o
+
+Engine/messageHandler.i: Engine/messageHandler.cpp.i
+
+.PHONY : Engine/messageHandler.i
+
+# target to preprocess a source file
+Engine/messageHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/Engine/messageHandler.cpp.i
+.PHONY : Engine/messageHandler.cpp.i
+
+Engine/messageHandler.s: Engine/messageHandler.cpp.s
+
+.PHONY : Engine/messageHandler.s
+
+# target to generate assembly for a file
+Engine/messageHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/Engine/messageHandler.cpp.s
+.PHONY : Engine/messageHandler.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -449,6 +476,9 @@ help:
 	@echo "... Engine/Tile.o"
 	@echo "... Engine/Tile.i"
 	@echo "... Engine/Tile.s"
+	@echo "... Engine/messageHandler.o"
+	@echo "... Engine/messageHandler.i"
+	@echo "... Engine/messageHandler.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

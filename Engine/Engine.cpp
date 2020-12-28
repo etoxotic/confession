@@ -50,10 +50,11 @@ void Engine::startGame(){
 
 void Engine::inputHandler()
 {
-    if (event.type == sf::Event::Closed)
+    if (event.type == Event::Closed)
         renderWindow.close();
-    if (sf::Mouse::isButtonPressed(sf::Mouse::Left)){
+    if (Mouse::isButtonPressed(Mouse::Left)){
         String link = interface->clickHandler();
+        game->clickHandler();
         if(link == "gamePage"){
             windowState = "gamePage";
             interface->setState(windowState);
@@ -73,13 +74,15 @@ void Engine::inputHandler()
             game->setPause(true);
         }
     }
-    if (event.type == sf::Event::KeyPressed){
-        if(event.key.code == sf::Keyboard::Space&& windowState == "gamePage"){
+    if (event.type == Event::KeyPressed){
+        if(event.key.code == Keyboard::Enter && (windowState == "gamePage" || windowState == "gamePaused"))
+            game->messageHandler();
+        if(event.key.code == Keyboard::Space && windowState == "gamePage"){
             windowState = "gamePaused";
             interface->setState(windowState);
             game->setPause(true);
         }
-        else if(event.key.code == sf::Keyboard::Space && windowState == "gamePaused"){
+        else if(event.key.code == Keyboard::Space && windowState == "gamePaused"){
             windowState = "gamePage";
             interface->setState(windowState);
             startGame();
@@ -97,7 +100,7 @@ void Engine::update()
     Vector2i mousePos = Mouse::getPosition(renderWindow);
     interface->update(mousePos);
     if(windowState == "gamePage" || windowState=="gamePaused")
-        game->update();
+        game->update(mousePos);
 }
 
 void Engine::draw()
