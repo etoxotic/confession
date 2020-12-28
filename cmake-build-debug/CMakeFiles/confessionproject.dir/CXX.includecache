@@ -676,49 +676,9 @@ SFML/Config.hpp
 
 ../resources/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
 
-/home/yana/Documents/uni/процпрога/confession/confession/Engine/Bullet.h
-SFML/Graphics.hpp
--
-Tile.h
-/home/yana/Documents/uni/процпрога/confession/confession/Engine/Tile.h
-cmath
--
-iostream
--
-
-/home/yana/Documents/uni/процпрога/confession/confession/Engine/Button.h
-SFML/Graphics.hpp
--
-
-/home/yana/Documents/uni/процпрога/confession/confession/Engine/Ego.h
-Bullet.h
-/home/yana/Documents/uni/процпрога/confession/confession/Engine/Bullet.h
-Tile.h
-/home/yana/Documents/uni/процпрога/confession/confession/Engine/Tile.h
-list
--
-SFML/Graphics.hpp
--
-
-/home/yana/Documents/uni/процпрога/confession/confession/Engine/Game.cpp
-Game.h
-/home/yana/Documents/uni/процпрога/confession/confession/Engine/Game.h
-
-/home/yana/Documents/uni/процпрога/confession/confession/Engine/Game.h
-Tile.h
-/home/yana/Documents/uni/процпрога/confession/confession/Engine/Tile.h
-Bullet.h
-/home/yana/Documents/uni/процпрога/confession/confession/Engine/Bullet.h
-Ego.h
-/home/yana/Documents/uni/процпрога/confession/confession/Engine/Ego.h
-Interface.h
-/home/yana/Documents/uni/процпрога/confession/confession/Engine/Interface.h
+/home/yana/Documents/uni/процпрога/confession/confession/Engine/Generator.cpp
 Generator.h
 /home/yana/Documents/uni/процпрога/confession/confession/Engine/Generator.h
-SFML/Graphics.hpp
--
-list
--
 
 /home/yana/Documents/uni/процпрога/confession/confession/Engine/Generator.h
 Tile.h
@@ -732,14 +692,6 @@ fstream
 string
 -
 sstream
--
-
-/home/yana/Documents/uni/процпрога/confession/confession/Engine/Interface.h
-SFML/Graphics.hpp
--
-Button.h
-/home/yana/Documents/uni/процпрога/confession/confession/Engine/Button.h
-list
 -
 
 /home/yana/Documents/uni/процпрога/confession/confession/Engine/Tile.h

@@ -6,7 +6,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/yana/Documents/uni/процпрога/confession/confession/Engine/Bullet.cpp" "/home/yana/Documents/uni/процпрога/confession/confession/cmake-build-debug/CMakeFiles/confessionproject.dir/Engine/Bullet.cpp.o"
   "/home/yana/Documents/uni/процпрога/confession/confession/Engine/Button.cpp" "/home/yana/Documents/uni/процпрога/confession/confession/cmake-build-debug/CMakeFiles/confessionproject.dir/Engine/Button.cpp.o"
-  "/home/yana/Documents/uni/процпрога/confession/confession/Engine/Ego.cpp" "/home/yana/Documents/uni/процпрога/confession/confession/cmake-build-debug/CMakeFiles/confessionproject.dir/Engine/Ego.cpp.o"
   "/home/yana/Documents/uni/процпрога/confession/confession/Engine/Engine.cpp" "/home/yana/Documents/uni/процпрога/confession/confession/cmake-build-debug/CMakeFiles/confessionproject.dir/Engine/Engine.cpp.o"
   "/home/yana/Documents/uni/процпрога/confession/confession/Engine/Game.cpp" "/home/yana/Documents/uni/процпрога/confession/confession/cmake-build-debug/CMakeFiles/confessionproject.dir/Engine/Game.cpp.o"
   "/home/yana/Documents/uni/процпрога/confession/confession/Engine/Generator.cpp" "/home/yana/Documents/uni/процпрога/confession/confession/cmake-build-debug/CMakeFiles/confessionproject.dir/Engine/Generator.cpp.o"

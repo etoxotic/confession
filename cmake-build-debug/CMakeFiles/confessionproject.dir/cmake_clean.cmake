@@ -1,7 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/confessionproject.dir/Engine/Bullet.cpp.o"
   "CMakeFiles/confessionproject.dir/Engine/Button.cpp.o"
-  "CMakeFiles/confessionproject.dir/Engine/Ego.cpp.o"
   "CMakeFiles/confessionproject.dir/Engine/Engine.cpp.o"
   "CMakeFiles/confessionproject.dir/Engine/Game.cpp.o"
   "CMakeFiles/confessionproject.dir/Engine/Generator.cpp.o"

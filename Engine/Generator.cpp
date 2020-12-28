@@ -35,23 +35,32 @@ void Generator::readLevel() {
     for (auto key: readLine){
         if(int(key)>64 && int(key)<90)
             tacts->push_back(key);
+        else
+            tacts->push_back('0');
     }
     levelFile.close();
     setTilesScheme();
 }
 
 void Generator::setTilesScheme() {
+    int i = 0, ncenter = 0;
+    for (auto keyLine : lines) {
+        if(i==1)
+            ncenter = keyLine->size();
+        i++;
+    }
+    cout << ncenter;
     int y = 0;
     for (auto keyLine : lines) {
         int n = keyLine->size();
-        int x = 120;
-        if(schemeConf == "zero"){
+        int x = 400;
+        if(schemeConf == "reverse"){
             if(y==0)
-                x += 100;
+                x += (70*ncenter-40-140*n);
             if(y==1)
-                x += 0;
+                x += (-70*ncenter);
             if(y==2)
-                x += 40;
+                x += (-70*ncenter+40);
         }
         for (char key: *keyLine){
             setTile(x, 250+y*80, key);

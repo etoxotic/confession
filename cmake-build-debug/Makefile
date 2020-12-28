@@ -197,33 +197,6 @@ Engine/Button.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/Engine/Button.cpp.s
 .PHONY : Engine/Button.cpp.s
 
-Engine/Ego.o: Engine/Ego.cpp.o
-
-.PHONY : Engine/Ego.o
-
-# target to build an object file
-Engine/Ego.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/Engine/Ego.cpp.o
-.PHONY : Engine/Ego.cpp.o
-
-Engine/Ego.i: Engine/Ego.cpp.i
-
-.PHONY : Engine/Ego.i
-
-# target to preprocess a source file
-Engine/Ego.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/Engine/Ego.cpp.i
-.PHONY : Engine/Ego.cpp.i
-
-Engine/Ego.s: Engine/Ego.cpp.s
-
-.PHONY : Engine/Ego.s
-
-# target to generate assembly for a file
-Engine/Ego.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/Engine/Ego.cpp.s
-.PHONY : Engine/Ego.cpp.s
-
 Engine/Engine.o: Engine/Engine.cpp.o
 
 .PHONY : Engine/Engine.o
@@ -455,9 +428,6 @@ help:
 	@echo "... Engine/Button.o"
 	@echo "... Engine/Button.i"
 	@echo "... Engine/Button.s"
-	@echo "... Engine/Ego.o"
-	@echo "... Engine/Ego.i"
-	@echo "... Engine/Ego.s"
 	@echo "... Engine/Engine.o"
 	@echo "... Engine/Engine.i"
 	@echo "... Engine/Engine.s"

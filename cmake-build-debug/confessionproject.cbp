@@ -98,12 +98,6 @@
 		<Unit filename="/home/yana/Documents/uni/процпрога/confession/confession/Engine/Button.h">
 			<Option target="confessionproject"/>
 		</Unit>
-		<Unit filename="/home/yana/Documents/uni/процпрога/confession/confession/Engine/Ego.cpp">
-			<Option target="confessionproject"/>
-		</Unit>
-		<Unit filename="/home/yana/Documents/uni/процпрога/confession/confession/Engine/Ego.h">
-			<Option target="confessionproject"/>
-		</Unit>
 		<Unit filename="/home/yana/Documents/uni/процпрога/confession/confession/Engine/Engine.cpp">
 			<Option target="confessionproject"/>
 		</Unit>

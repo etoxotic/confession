@@ -14,6 +14,7 @@ Game::Game(){
 }
 
 void Game::start(){
+    generator = new Generator(0,&tiles,&tacts,&bmp);
     startTacts();
 }
 
@@ -22,7 +23,7 @@ void Game::startTacts(){
     gameOn = true;
     pause = false;
     currTact = tacts.begin();
-    oneTact = seconds(240/float(bmp));
+    oneTact = seconds(60/float(bmp));
     deltaTime.restart();
     currTime = seconds(0);
     updateField();
@@ -111,16 +112,7 @@ void Game::setPause(bool flag) {
         deltaTime.restart();
 }
 
-list<Tile*>  *Game::getTiles(){
-    return &tiles;
-};
 
-list<char> *Game::getTacts() {
-    return &tacts;
-}
-int *Game::getBmp() {
-    return &bmp;
-}
 bool Game::isEnded() {
     return endGame;
 }

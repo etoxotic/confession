@@ -8,9 +8,7 @@
 #pragma once
 #include "Tile.h"
 #include "Bullet.h"
-#include "Ego.h"
 #include "Interface.h"
-#include "Generator.h"
 #include "Game.h"
 #include "KeyHandler.h"
 #include <SFML/Graphics.hpp>
@@ -28,7 +26,6 @@ private:
     RenderWindow renderWindow;
     Event event;
     Interface *interface;
-    Generator *generator;
     Game *game;
     String windowState;
     Time updatePeriod;

@@ -8,7 +8,6 @@
 #pragma once
 #include "Tile.h"
 #include "Bullet.h"
-#include "Ego.h"
 #include "Interface.h"
 #include "Generator.h"
 #include <SFML/Graphics.hpp>
@@ -20,7 +19,7 @@ private:
     list<Bullet*> bullets;
     list<char> tacts;
     Tile* pressedTile;
-    Ego* ego;
+    Generator *generator;
     bool pause;
     bool firstPress;
     bool endGame;
@@ -43,9 +42,6 @@ public:
     void draw(RenderWindow *window);
     void update();
     void tilePress(char key);
-    list<Tile*>  *getTiles();
-    list<char> *getTacts();
-    int *getBmp();
     bool isEnded();
     bool isOn();
 };

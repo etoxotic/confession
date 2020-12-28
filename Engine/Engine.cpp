@@ -26,7 +26,6 @@ void Engine::start()
 {
     clock.restart();
     game = new Game();
-    generator = new Generator(0,game->getTiles(),game->getTacts(),game->getBmp());
     interface = new Interface();
     interface->setState(windowState);
 
