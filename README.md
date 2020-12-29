@@ -38,3 +38,6 @@ RTY   DFGHJ   R0T0Y0
 SFML версии 2.5.1. \
 Cmake версии 3.17 минимум. \
 Картиночки мои :3
+***
+### Запись экрана
+Вот здесь: https://drive.google.com/file/d/1yQdaNmJOzGSmSYxtAa-GDHahHVKry9xl/view?usp=sharing
