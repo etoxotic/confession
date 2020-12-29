@@ -20,7 +20,7 @@ void Interface::setState(String state){
     if(state == "startPage"){
         setText(150,50,"logo","CONFESSION");
         setText(334,150,"text",L"ИСПОВЕДЬ");
-        setText(0,560,"tinytext","dev ver.");
+        setText(0,560,"tinytext","demover.");
         setText(265 ,550,"tinytext", L"Советуем использовать наушники");
         setText(710,560,"tinytext","@etoxotic");
         setButton(250,250,"normal","PLAY","gamePage");
