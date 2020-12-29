@@ -33,7 +33,7 @@ void Game::start(){
     nTact=0;
     kDelay=2;
     karmaPoints = 100;
-    deltaKarmaPoints = 5;
+    deltaKarmaPoints = 1;
     nMessage = 0;
     tiles.clear();
     bullets.clear();
