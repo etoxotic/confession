@@ -74,7 +74,8 @@ void Engine::inputHandler()
             interface->setState(windowState);
         }
         if(link == "startPage"){
-            music.play();
+            if(music.getStatus() != SoundSource::Playing)
+                music.play();
             windowState = "startPage";
             interface->setState(windowState);
             if(game->isOn())

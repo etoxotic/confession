@@ -12,10 +12,6 @@ Game::Game(){
     egoLost = false;
     egoWon = false;
     messageShown = false;
-    nTact=0;
-    kDelay=3;
-    karmaPoints = 100;
-    deltaKarmaPoints = 1;
     egoTexture.loadFromFile("../resources/ego.png");
     egoSprite.setTexture(egoTexture);
     egoSprite.setPosition(280, 50);
@@ -37,7 +33,7 @@ void Game::start(){
     nTact=0;
     kDelay=2;
     karmaPoints = 100;
-    deltaKarmaPoints = 1;
+    deltaKarmaPoints = 5;
     nMessage = 0;
     tiles.clear();
     bullets.clear();

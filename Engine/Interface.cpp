@@ -21,7 +21,7 @@ void Interface::setState(String state){
         setText(150,50,"logo","CONFESSION");
         setText(334,150,"text",L"ИСПОВЕДЬ");
         setText(0,560,"tinytext","dev ver.");
-        setText(270 ,550,"tinytext", L"Советуем использовать наушники");
+        setText(265 ,550,"tinytext", L"Советуем использовать наушники");
         setText(710,560,"tinytext","@etoxotic");
         setButton(250,250,"normal","PLAY","gamePage");
         setButton(380, 380, "borderless", "INFO", "infoPage");
@@ -35,6 +35,16 @@ void Interface::setState(String state){
         setButton(750, 0, "borderless", " |> ", "gamePage");
     }
     if(state == "infoPage"){
+        setText(30 ,50,"tinytext", L"Для полной информации посетите https://github.com/etoxotic/confession");
+        setText(30 ,110,"tinytext", L"Enter - перелистнуть диалог");
+        setText(30 ,140,"tinytext", L"Пробел - пауза");
+        setText(30 ,170,"tinytext", L"Клавишы букв - защитить одноименную ПЛИТУ");
+        setText(30 ,200,"tinytext", L"ГОЛУБАЯ ПЛИТА не находится под угрозой");
+        setText(30 ,230,"tinytext", L"ОРАНЖЕВАЯ ПЛИТА находится под угрозой");
+        setText(30 ,260,"tinytext", L"РОЗОВАЯ ПЛИТА защищена АУРОЙ (нажата)");
+        setText(30 ,290,"tinytext", L"КРАСНАЯ ПЛИТА получила урон");
+        setText(30 ,320,"tinytext", L"ЗЕЛЕНАЯ ПЛИТА была защищена");
+
         setButton(10, 0, "borderless", " <- ", "startPage");
     }
 }

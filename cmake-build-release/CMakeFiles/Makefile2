@@ -67,7 +67,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/yana/Documents/uni/процпрога/confession/confession
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yana/Documents/uni/процпрога/confession/confession/cmake-build-debug
+CMAKE_BINARY_DIR = /home/yana/Documents/uni/процпрога/confession/confession/cmake-build-release
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -94,14 +94,14 @@ clean: CMakeFiles/confessionproject.dir/clean
 CMakeFiles/confessionproject.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/confessionproject.dir/build.make CMakeFiles/confessionproject.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yana/Documents/uni/процпрога/confession/confession/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12 "Built target confessionproject"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yana/Documents/uni/процпрога/confession/confession/cmake-build-release/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12 "Built target confessionproject"
 .PHONY : CMakeFiles/confessionproject.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/confessionproject.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yana/Documents/uni/процпрога/confession/confession/cmake-build-debug/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yana/Documents/uni/процпрога/confession/confession/cmake-build-release/CMakeFiles 12
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/confessionproject.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yana/Documents/uni/процпрога/confession/confession/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yana/Documents/uni/процпрога/confession/confession/cmake-build-release/CMakeFiles 0
 .PHONY : CMakeFiles/confessionproject.dir/rule
 
 # Convenience name for target.
